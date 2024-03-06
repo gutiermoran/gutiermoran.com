@@ -1,0 +1,124 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header {
+    .social-bar {
+        background-color: #222;
+
+        .content {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .pi {
+            color: white;
+            margin: .5em;
+            font-size: 1.25em;
+        }
+    }
+
+    .header-container {
+        margin: 3em auto;
+        display: flex;
+        align-items: center;
+        gap: 3em;
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+        }
+    }
+
+    .header-container>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+
+        .name {
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        .nav-menu ul {
+            display: flex;
+            gap: 2em;
+            justify-content: flex-start;
+            align-items: center;
+
+            li {
+                list-style: none;
+                font-size: 1.1em;
+                letter-spacing: .05em;
+
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+
+        @media (width <=1045px) {
+            .nav-menu ul {
+                justify-content: center;
+
+                li {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    @media (width <=1045px) {
+        .header-container {
+            flex-direction: column;
+            align-content: center;
+            gap: 1em;
+
+            .profile-image {
+                width: 130px;
+                height: 130px;
+            }
+
+            .name {
+                text-align: center;
+                font-size: 1.5em !important;
+            }
+        }
+    }
+
+}
+
+.main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em auto 4em;
+
+    .angular {
+        color: rgb(247 43 122);
+        text-decoration: none;
+    }
+
+}
+
+@media (width <=1045px) {
+    footer {
+        justify-content: space-around;
+        margin: 3em auto 1em;
+
+        .builder,
+        .copyright {
+            font-size: .8em;
+        }
+    }
+}
