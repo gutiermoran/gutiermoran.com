@@ -27,10 +27,11 @@ header {
         align-items: center;
         gap: 3em;
 
-        .profile-image {
+        .avatar {
             width: 150px;
             height: 150px;
             border-radius: 100%;
+            border: 5px solid #ddd;
         }
     }
 
