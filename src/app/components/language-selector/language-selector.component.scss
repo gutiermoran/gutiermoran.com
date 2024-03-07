@@ -1,0 +1,16 @@
+::ng-deep .p-dropdown {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 150px !important;
+    margin: .5em 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+::ng-deep .p-dropdown-label {
+    color: #ddd;
+    font-weight: 300;
+}
+
+::ng-deep .p-overlay {
+    margin-top: 8px !important;
+}
