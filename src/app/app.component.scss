@@ -44,6 +44,8 @@ header {
         .name {
             font-size: 2em;
             text-transform: uppercase;
+            margin: 0;
+            padding: 0;
         }
 
         .nav-menu ul {
@@ -51,6 +53,8 @@ header {
             gap: 2em;
             justify-content: flex-start;
             align-items: center;
+            margin: 0;
+            padding: 0;
 
             li {
                 list-style: none;
@@ -94,10 +98,6 @@ header {
         }
     }
 
-}
-
-.main {
-    flex: 1;
 }
 
 footer {
