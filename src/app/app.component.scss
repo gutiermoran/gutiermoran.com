@@ -6,7 +6,7 @@
 
 header {
     .social-bar {
-        background-color: #222;
+        background-color: rgb(64, 105, 168);
 
         .content {
             display: flex;
@@ -28,24 +28,35 @@ header {
         gap: 3em;
 
         .avatar {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 100%;
-            border: 5px solid #ddd;
         }
     }
 
-    .header-container>div {
+    .personal-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1em;
 
         .name {
             font-size: 2em;
-            text-transform: uppercase;
             margin: 0;
             padding: 0;
+            font-family: "Fira Sans" "Open Sans";
+            text-transform: uppercase;
+        }
+
+        .occupation {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            margin-left: -5px;
+            font-family: "Fira Sans" "Open Sans";
+            font-weight: 200;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+
         }
 
         .nav-menu ul {
@@ -53,8 +64,8 @@ header {
             gap: 2em;
             justify-content: flex-start;
             align-items: center;
-            margin: 0;
             padding: 0;
+            margin: 1em 0 0;
 
             li {
                 list-style: none;
@@ -65,6 +76,18 @@ header {
                     text-transform: uppercase;
                     text-decoration: none;
                     color: #000;
+                }
+
+                ::ng-deep .p-button {
+                    font-size: .7em;
+                    padding: 1em 1.3em;
+                    background-color: #788BA8;
+                    margin-left: -4px;
+                    border: none;
+                }
+
+                ::ng-deep .p-button:hover {
+                    background-color: #4069A8;
                 }
             }
         }
