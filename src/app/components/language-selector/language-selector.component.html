@@ -1,8 +1,0 @@
-<p-dropdown (onChange)="updateLanguage()" [options]="languages" [(ngModel)]="selectedLanguage">
-    <ng-template let-selectedLanguage pTemplate="selectedItem">
-        {{ selectedLanguage.name | translate }}
-    </ng-template>
-    <ng-template let-language pTemplate="item">
-        {{ language.name | translate }}
-    </ng-template>
-</p-dropdown>

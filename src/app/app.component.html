@@ -1,7 +1,6 @@
 <header>
   <div class="social-bar">
     <div class="content">
-      <app-language-selector></app-language-selector>
       <div>
         <a href="https://www.github.com/gutiermoran" target="_blank"><i class="pi pi-github"></i></a>
         <a href="https://www.linkedin.com/in/gutiermoran" target="_blank"><i class="pi pi-linkedin"></i></a>
@@ -11,14 +10,12 @@
 
   <div class="header-container content">
     <a routerLink="">
-      <img class="avatar" src="./../assets/img/avatar.jpg" alt="{{ 'APP.AVATAR-ALT' | translate }}">
+      <img class="avatar" src="./../assets/img/avatar.jpg" alt="Imagen de José Emilio Gutiérrez">
     </a>
     <div>
       <h1 class="name">José Emilio Gutiérrez Morán</h1>
       <nav class="nav-menu">
         <ul>
-          <li><a routerLink="">{{ "APP.PROJECTS" | translate}}</a></li>
-          <li><a routerLink="">{{ 'APP.CONTACT' | translate }}</a></li>
         </ul>
       </nav>
     </div>
@@ -30,6 +27,5 @@
 
 <footer class="content">
   <p class="copyright">&copy;&nbsp;{{ currentDate | date: 'yyyy' }}&nbsp;gutiermoran.com</p>
-  <p class="builder">{{ 'APP.BUILT' | translate }}&nbsp;<a class="angular" href="https://angular.dev/"
-      target="_blank">Angular.</a></p>
+  <p class="builder">Creado con&nbsp;<a class="angular" href="https://angular.dev/" target="_blank">Angular.</a></p>
 </footer>
