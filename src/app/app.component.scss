@@ -1,3 +1,6 @@
+@import "colors";
+@import "fonts";
+
 :host {
     display: flex;
     flex-direction: column;
@@ -6,7 +9,7 @@
 
 header {
     .social-bar {
-        background-color: rgb(64, 105, 168);
+        background-color: $primary-color;
         height: 40px;
 
         .content {
@@ -16,9 +19,13 @@ header {
         }
 
         .pi {
-            color: white;
+            color: #fff;
             margin: .5em;
             font-size: 1.25em;
+        }
+
+        .pi:hover {
+            color: $dark-orange;
         }
     }
 
@@ -32,7 +39,7 @@ header {
             width: 180px;
             height: 180px;
             border-radius: 100%;
-            border: 5px solid lightblue;
+            border: 5px solid $dark-gray;
         }
     }
 
@@ -45,9 +52,8 @@ header {
             font-size: 2em;
             margin: 0;
             padding: 0;
-            font-family: "Fira Sans" "Open Sans";
+            font-family: $special-font;
             text-transform: uppercase;
-            letter-spacing: -.03em;
         }
 
         .occupation {
@@ -55,7 +61,7 @@ header {
             padding: 0;
             font-size: 1.4em;
             margin-left: -5px;
-            font-family: "Fira Sans" "Open Sans";
+            font-family: $special-font;
             font-weight: 200;
             letter-spacing: .2em;
             text-transform: uppercase;
@@ -83,7 +89,7 @@ header {
                     ::ng-deep .p-button {
                         font-size: .7em;
                         padding: 1em 1.3em;
-                        background-color: #788BA8;
+                        background-color: $secondary-color;
                         margin-left: -4px;
                         border: none;
                         box-shadow: none !important;
@@ -92,7 +98,7 @@ header {
                     ::ng-deep .p-button-label {
                         letter-spacing: .1em;
                         font-weight: 400;
-                        font-family: "Fira Sans", "Open Sans";
+                        font-family: $special-font;
                     }
 
                     ::ng-deep .p-button:hover {
@@ -109,7 +115,7 @@ header {
                 ::ng-deep .p-button {
                     width: 100% !important;
                     background-color: transparent;
-                    border: 1px solid #788BA8;
+                    border: 1px solid $secondary-color;
                     box-shadow: none !important;
                     font-size: .7em;
                 }
@@ -121,13 +127,13 @@ header {
                 ::ng-deep .p-button-label {
                     letter-spacing: .1em;
                     font-weight: 400;
-                    font-family: "Fira Sans", "Open Sans";
+                    font-family: $special-font;
                     color: #000;
                     text-align: left;
                 }
 
                 ::ng-deep .p-button-icon {
-                    color: #788BA8;
+                    color: $secondary-color;
                 }
             }
         }
@@ -166,7 +172,7 @@ header {
 }
 
 footer {
-    background-color: rgb(64, 105, 168);
+    background-color: $primary-color;
     letter-spacing: .01em;
     font-size: .9em;
     font-weight: 300;
