@@ -7,6 +7,7 @@
 header {
     .social-bar {
         background-color: rgb(64, 105, 168);
+        height: 40px;
 
         .content {
             display: flex;
@@ -45,12 +46,13 @@ header {
             padding: 0;
             font-family: "Fira Sans" "Open Sans";
             text-transform: uppercase;
+            letter-spacing: -.03em;
         }
 
         .occupation {
             margin: 0;
             padding: 0;
-            font-size: 1.5em;
+            font-size: 1.4em;
             margin-left: -5px;
             font-family: "Fira Sans" "Open Sans";
             font-weight: 200;
@@ -84,6 +86,12 @@ header {
                     background-color: #788BA8;
                     margin-left: -4px;
                     border: none;
+                }
+
+                ::ng-deep .p-button-label {
+                    letter-spacing: .1em;
+                    font-weight: 500;
+                    font-family: "Fira Sans" "Open Sans";
                 }
 
                 ::ng-deep .p-button:hover {
@@ -124,13 +132,25 @@ header {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 3em auto 4em;
+    background-color: rgb(64, 105, 168);
+    letter-spacing: .01em;
+    font-size: .9em;
+    height: 40px;
+    margin: 0 !important;
 
-    .angular {
-        color: rgb(247 43 122);
-        text-decoration: none;
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+
+        .copyright,
+        .builder,
+        .angular {
+            margin: 0 !important;
+            color: #fff;
+        }
+
     }
 
 }
@@ -138,7 +158,6 @@ footer {
 @media (width <=1045px) {
     footer {
         justify-content: space-around;
-        margin: 3em auto 1em;
 
         .builder,
         .copyright {
