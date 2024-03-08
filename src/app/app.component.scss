@@ -32,6 +32,7 @@ header {
             width: 180px;
             height: 180px;
             border-radius: 100%;
+            border: 5px solid lightblue;
         }
     }
 
@@ -63,7 +64,7 @@ header {
 
         .nav-menu ul {
             display: flex;
-            gap: 2em;
+            gap: .5em;
             justify-content: flex-start;
             align-items: center;
             padding: 0;
@@ -78,53 +79,86 @@ header {
                     text-transform: uppercase;
                     text-decoration: none;
                     color: #000;
+
+                    ::ng-deep .p-button {
+                        font-size: .7em;
+                        padding: 1em 1.3em;
+                        background-color: #788BA8;
+                        margin-left: -4px;
+                        border: none;
+                        box-shadow: none !important;
+                    }
+
+                    ::ng-deep .p-button-label {
+                        letter-spacing: .1em;
+                        font-weight: 400;
+                        font-family: "Fira Sans", "Open Sans";
+                    }
+
+                    ::ng-deep .p-button:hover {
+                        background-color: #4069A8;
+                    }
                 }
 
+
+            }
+
+            li:nth-child(2) {
+                flex: 1;
+
                 ::ng-deep .p-button {
+                    width: 100% !important;
+                    background-color: transparent;
+                    border: 1px solid #788BA8;
+                    box-shadow: none !important;
                     font-size: .7em;
-                    padding: 1em 1.3em;
-                    background-color: #788BA8;
-                    margin-left: -4px;
-                    border: none;
+                }
+
+                ::ng-deep .p-button:active {
+                    background-color: rgba(0, 213, 112, .3) !important;
                 }
 
                 ::ng-deep .p-button-label {
                     letter-spacing: .1em;
-                    font-weight: 500;
-                    font-family: "Fira Sans" "Open Sans";
+                    font-weight: 400;
+                    font-family: "Fira Sans", "Open Sans";
+                    color: #000;
+                    text-align: left;
                 }
 
-                ::ng-deep .p-button:hover {
-                    background-color: #4069A8;
+                ::ng-deep .p-button-icon {
+                    color: #788BA8;
                 }
             }
         }
 
-        @media (width <=1045px) {
+        @media (width <=700px) {
             .nav-menu ul {
-                justify-content: center;
+                li:nth-child(1)>* {
 
-                li {
-                    font-size: 1em;
+                    ::ng-deep .p-button {
+                        margin-left: -1px;
+                    }
                 }
             }
         }
     }
 
-    @media (width <=1045px) {
+    @media (width <=700px) {
         .header-container {
             flex-direction: column;
             align-content: center;
             gap: 1em;
 
-            .profile-image {
-                width: 130px;
-                height: 130px;
-            }
-
             .name {
                 text-align: center;
-                font-size: 1.5em !important;
+                font-size: 1.8em !important;
+            }
+
+            .occupation {
+                text-align: center;
+                font-size: 1em;
+                margin: 0;
             }
         }
     }
@@ -135,6 +169,7 @@ footer {
     background-color: rgb(64, 105, 168);
     letter-spacing: .01em;
     font-size: .9em;
+    font-weight: 300;
     height: 40px;
     margin: 0 !important;
 
@@ -155,7 +190,7 @@ footer {
 
 }
 
-@media (width <=1045px) {
+@media (width <=700px) {
     footer {
         justify-content: space-around;
 
