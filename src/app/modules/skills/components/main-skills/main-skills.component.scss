@@ -24,6 +24,10 @@ section {
             .section-title {
                 text-align: center;
             }
+
+            .section-description {
+                margin: 0 1em;
+            }
         }
 
 
@@ -42,6 +46,7 @@ section {
         @media (width <=1140px) {
             .content {
                 grid-template-columns: 1fr;
+                padding: 1em 1em 3em;
             }
         }
     }
