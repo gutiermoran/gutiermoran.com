@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
-import { CardModule } from 'primeng/card';
+import { MainProjectsComponent } from './../main-projects/main-projects.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CardModule],
+  imports: [MainProjectsComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })

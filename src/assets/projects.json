@@ -1,0 +1,19 @@
+[
+    {
+        "name": "gutiermoran.com",
+        "description": "Página web personal donde puedes encontrar información relevante a mi carrera profesional, como puede ser mi portfolio, y más información sobre mí.",
+        "technologies": [
+            {
+                "name": "Angular",
+                "icon": "fab fa-angular"
+            },
+            {
+                "name": "Sass",
+                "icon": "fab fa-sass"
+            }
+        ],
+        "image": "",
+        "isMain": true,
+        "codeLink": "https://github.com/gutiermoran/gutiermoran.com"
+    }
+]
