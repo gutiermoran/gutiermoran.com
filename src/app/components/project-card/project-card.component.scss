@@ -1,0 +1,73 @@
+@import "colors";
+@import "fonts";
+
+.card {
+    background-color: #fff;
+    border-radius: .5em;
+    display: flex;
+
+    .project-info-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .project-name {
+            margin: 0;
+            padding: 1em 1em 0;
+            font-family: "Fira Sans";
+            font-weight: 300;
+        }
+
+        .project-description {
+            padding: 0.5em 1.5em 1em;
+            margin: 0;
+        }
+
+        .technologies-container {
+            padding: 0 1.5em 1.5em;
+            display: flex;
+            gap: .5em;
+
+            ::ng-deep .p-chip-text {
+                font-size: .8em;
+            }
+        }
+
+        .source-code-button {
+            margin: auto 0 1.5em 1.5em;
+        }
+
+        ::ng-deep .source-code-button .p-button {
+            background-color: $primary-color;
+            box-shadow: none !important;
+            font-size: .7em;
+            border: 0;
+            border-radius: 50px;
+            padding: .75em 1em;
+        }
+
+        ::ng-deep .source-code-button .p-button-label {
+            font-family: "Inter var", sans-serif;
+            font-weight: 200;
+            letter-spacing: .08em;
+        }
+    }
+
+    .project-image {
+        width: 40%;
+        border-radius: 0 .5em .5em 0;
+    }
+
+    @media(width <=850px) {
+        .project-image {
+            width: 100%;
+            border-radius: 0 0 .5em .5em;
+        }
+    }
+}
+
+@media(width <=850px) {
+    .card {
+        display: block;
+    }
+}
