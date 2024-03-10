@@ -1,0 +1,6 @@
+<h2 class="group-name">{{ skillsGroup.name }}</h2>
+<div class="skills-container">
+    @for(skill of skillsGroup.skills; track skill.name) {
+    <p-chip [label]="skill.name" [icon]="skill.icon"></p-chip>
+    }
+</div>

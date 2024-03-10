@@ -1,0 +1,49 @@
+@import 'fonts';
+@import 'colors';
+
+section {
+    .section-header {
+        background-color: rgb(64, 105, 168, .9);
+        background-color: rgba(255, 255, 255, .9);
+
+        .section-title {
+            font-size: 1.5em;
+            padding: 2em 0;
+            margin: 0;
+            color: $primary-color;
+            text-transform: uppercase;
+            font-family: $special-font;
+            letter-spacing: .1em;
+        }
+
+        .section-description {
+            margin: 0;
+        }
+
+        @media (width <=700px) {
+            .section-title {
+                text-align: center;
+            }
+        }
+
+
+    }
+
+    .skills-groups-container {
+        background-color: rgba(255, 255, 255, .9);
+        padding: 1em 0 3em;
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1em;
+        }
+
+        @media (width <=1140px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+}
