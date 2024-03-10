@@ -7,8 +7,10 @@
             <p-chip [label]="technology.name" [icon]="technology.icon"></p-chip>
             }
         </div>
+        @if (project.codeLink) {
         <a class="source-code-button" [href]="project.codeLink" target="_blank"><p-button icon="pi pi-github"
-                label="Código Fuente"></p-button></a>
+                label="Código"></p-button></a>
+        }
     </div>
     <img class="project-image" [src]="project.image">
 </div>

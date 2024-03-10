@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { ProjectCardComponent } from './../project-card/project-card.component';
-import { Project } from '../../model/project.model';
+import { Project } from '../../../../model/project.model';
 import { NgForOf } from '@angular/common';
 
 @Component({
