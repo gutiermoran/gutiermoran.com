@@ -1,0 +1,42 @@
+@import 'fonts';
+
+@import 'colors';
+$background-color-section: rgba(255, 255, 253, 0.9);
+
+section {
+
+    .section-header {
+
+        .section-title {
+            font-size: 1.4em;
+            padding: 2em 0 1.5em;
+            margin: 0;
+            color: $primary-color;
+            text-transform: uppercase;
+            font-family: $special-font;
+            letter-spacing: .1em;
+        }
+
+        @media (width <=700px) {
+            .section-title {
+                text-align: center;
+            }
+        }
+    }
+
+    .projects-container {
+        padding-bottom: 3em;
+
+        .content {
+            display: grid;
+            gap: 2em;
+        }
+    }
+}
+
+@media (width <=700px) {
+    section {
+        background-position-x: center;
+        background-attachment: local;
+    }
+}

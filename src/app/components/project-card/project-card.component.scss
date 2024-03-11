@@ -1,9 +1,17 @@
 @import "colors";
 @import "fonts";
 
+::ng-deep .p-chip {
+    border-radius: 8px;
+    padding: .25em .5em;
+    border: 1px solid #bbb;
+}
+
+::ng-deep .p-chip-text {
+    margin: 0;
+}
+
 .card {
-    background-color: #fff;
-    border-radius: .5em;
     display: flex;
 
     .project-info-container {
@@ -13,20 +21,34 @@
 
         .project-name {
             margin: 0;
-            padding: 1em 1em 0;
-            font-family: "Fira Sans";
-            font-weight: 300;
+            font-family: $special-font;
+            font-weight: bold;
+            font-size: 1.3em;
+            letter-spacing: .03em;
+            display: flex;
+            align-items: center;
+            gap: .5em;
+
+            a {
+                text-decoration: none;
+                font-size: .8em;
+                color: #bbb;
+            }
+
+            a:hover {
+                color: $dark-orange;
+            }
         }
 
         .project-description {
-            padding: 0.5em 1.5em 1em;
+            padding: 0.5em 0 1em;
             margin: 0;
+            font-size: 1em;
         }
 
         .technologies-container {
-            padding: 0 1.5em 1.5em;
             display: flex;
-            gap: .5em;
+            gap: 0.5em;
 
             ::ng-deep .p-chip-text {
                 font-size: .8em;

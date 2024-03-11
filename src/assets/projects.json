@@ -1,7 +1,7 @@
 [
     {
         "name": "gutiermoran.com",
-        "description": "Página web personal donde puedes encontrar información relevante a mi carrera profesional, como puede ser mi portfolio, y más información sobre mí.",
+        "description": "Portfolio personal con toda la información relevante a mi carrera profesional.",
         "technologies": [
             {
                 "name": "Angular",
