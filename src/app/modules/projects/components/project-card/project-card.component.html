@@ -1,16 +1,12 @@
 <div class="card">
     <div class="project-info-container">
-        <h1 class="project-name">{{ project.name }}</h1>
+        <h1 class="project-name">{{ project.name }}@if (project.codeLink) {<a class="fas fa-code"
+                [href]="project.codeLink" target="_blank"></a>}</h1>
         <p class="project-description">{{ project.description }}</p>
         <div class="technologies-container">
             @for (technology of project.technologies; track project.name) {
-            <p-chip [label]="technology.name" [icon]="technology.icon"></p-chip>
+            <p-chip [label]="technology.name"></p-chip>
             }
         </div>
-        @if (project.codeLink) {
-        <a class="source-code-button" [href]="project.codeLink" target="_blank"><p-button icon="pi pi-github"
-                label="Código"></p-button></a>
-        }
     </div>
-    <img class="project-image" [src]="project.image">
 </div>

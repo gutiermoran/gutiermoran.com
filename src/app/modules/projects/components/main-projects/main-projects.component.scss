@@ -1,19 +1,15 @@
 @import 'fonts';
+
 @import 'colors';
+$background-color-section: rgba(255, 255, 253, 0.9);
 
 section {
-    background-image: url('../../../../../assets/img/keyboard-image.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 
     .section-header {
-        background-color: rgb(64, 105, 168, .9);
-        background-color: rgba(255, 255, 255, .9);
 
         .section-title {
-            font-size: 1.5em;
-            padding: 2em 0;
+            font-size: 1.4em;
+            padding: 2em 0 1.5em;
             margin: 0;
             color: $primary-color;
             text-transform: uppercase;
@@ -29,8 +25,7 @@ section {
     }
 
     .projects-container {
-        background-color: rgba(255, 255, 255, .9);
-        padding-bottom: 2em;
+        padding-bottom: 3em;
 
         .content {
             display: grid;
@@ -42,5 +37,6 @@ section {
 @media (width <=700px) {
     section {
         background-position-x: center;
+        background-attachment: local;
     }
 }
