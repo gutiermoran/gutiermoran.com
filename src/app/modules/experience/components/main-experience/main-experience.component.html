@@ -1,0 +1,36 @@
+<section>
+    <div class="section-header">
+        <div class="content">
+            <h1 class="section-title">Experiencia Profesional</h1>
+        </div>
+    </div>
+    <div class="experience-container">
+        <div class="content">
+            <p-timeline [value]="experiences" align="left">
+                <ng-template pTemplate="marker" let-item>
+                    <span class="marker">{{ item.start | date: 'yyyy' }}</span>
+                </ng-template>
+                <ng-template pTemplate="content" let-item>
+                    <h2 class="position">{{ item.position }}</h2>
+                    <div class="position-info-container">
+                        <span>{{ item.company }} | </span>
+                        <span>{{ item.start | date: 'MM/yyyy' }} - </span>
+                        @if(item.end) {
+                        <span>{{ item.end | date: 'MM/yyyy' }}</span>
+                        } @else {
+                        <span>Actualidad</span>
+                        }
+                    </div>
+                    <p class="description">
+                        {{ item.description }}
+                    </p>
+                    <div class="stack-container">
+                        @for(technology of item.stack; track technology.name) {
+                        <p-chip [label]="technology.name" [icon]="technology.icon"></p-chip>
+                        }
+                    </div>
+                </ng-template>
+            </p-timeline>
+        </div>
+    </div>
+</section>

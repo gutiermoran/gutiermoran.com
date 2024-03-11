@@ -1,0 +1,108 @@
+@import 'colors';
+@import 'fonts';
+
+$position-info-data-color: #aaa;
+
+::ng-deep .p-timeline-event-opposite {
+    display: none !important;
+}
+
+::ng-deep .p-timeline-event-content {
+    margin: 0 0 3em;
+}
+
+::ng-deep .p-timeline-event-connector {
+    width: 1px;
+    margin: 0.75em 0;
+    background-color: #ccc;
+}
+
+::ng-deep .p-chip-text {
+    font-size: .8em !important;
+}
+
+.marker {
+    font-size: 1.27em;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    width: 50px;
+}
+
+section {
+    background-color: #d7e2fd;
+
+    .section-header {
+        background-color: rgb(64, 105, 168, .9);
+        background-color: rgba(255, 255, 255, .9);
+
+        .section-title {
+            font-size: 1.4em;
+            padding: 2em 0 1.5em;
+            margin: 0;
+            color: $primary-color;
+            text-transform: uppercase;
+            font-family: $special-font;
+            letter-spacing: .1em;
+        }
+
+        @media (width <=700px) {
+            .section-title {
+                text-align: center;
+            }
+        }
+    }
+
+    .experience-container {
+        background-color: rgba(255, 255, 255, .9);
+        padding-bottom: 2em;
+
+        .content {
+
+            .position {
+                margin: 0;
+                font-family: "Fira Sans", "Open Sans", sans-serif, helvetica;
+                font-weight: 400;
+                font-size: 1.3em;
+
+                span {
+                    color: $position-info-data-color;
+                }
+            }
+
+            .position-info-container {
+                font-family: $special-font;
+                font-weight: 300;
+                font-size: 1.1em;
+                color: $position-info-data-color;
+            }
+
+            .stack-container {
+                display: flex;
+                align-items: center;
+                gap: .75em;
+                flex-flow: wrap;
+
+                .stack-title {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin: 0;
+                }
+
+                .technologies {
+                    display: flex;
+                    align-items: center;
+                    gap: .5em;
+                }
+            }
+        }
+    }
+}
+
+@media (width <=700px) {
+    section {
+        background-position-x: center;
+    }
+}

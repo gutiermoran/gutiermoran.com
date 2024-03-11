@@ -1,0 +1,46 @@
+[
+    {
+        "position": "Desarrollador full-stack",
+        "company": "Ibermática",
+        "start": "09-16-2019",
+        "end": "07-11-2023",
+        "description": "Durante 4 años desarrollé evolutivos de aplicaciones web monolíticas con Atlas (basado en Spring) para la Comunidad de Madrid. Entre los proyectos más destacados se encuentra la aplicación PTEL (Plan de Teletrabajo) y RMER (Registro Electrónico de Méritos).",
+        "place": "Mérida (España)",
+        "stack": [
+            {
+                "name": "Java 8",
+                "icon": "fab fa-java"
+            },
+            {
+                "name": "JSF",
+                "icon": "fab fa-java"
+            },
+            {
+                "name": "HTML",
+                "icon": "fab fa-html5"
+            },
+            {
+                "name": "CSS",
+                "icon": "fab fa-css3"
+            },
+            {
+                "name": "Oracle SQL",
+                "icon": "fas fa-database"
+            }
+        ]
+    },
+    {
+        "position": "Desarrollador back-end",
+        "company": "Serquo",
+        "start": "07-12-2023",
+        "end": "10-19-2023",
+        "description": "",
+        "place": "Remoto",
+        "stack": [
+            {
+                "name": "Java 8",
+                "icon": "fab fa-java"
+            }
+        ]
+    }
+]
