@@ -1,55 +1,34 @@
 [
     {
-        "name": "Frameworks",
-        "skills": [
-            {
-                "name": "Angular",
-                "icon": "fab fa-angular"
-            }
-        ]
+        "name": "Angular",
+        "icon": "fab fa-angular"
     },
     {
-        "name": "Lenguajes de marcado y estilos",
-        "skills": [
-            {
-                "name": "HTML",
-                "icon": "fab fa-html5"
-            },
-            {
-                "name": "CSS",
-                "icon": "fab fa-css3"
-            }
-        ]
+        "name": "HTML",
+        "icon": "fab fa-html5"
     },
     {
-        "name": "Lenguajes de programación",
-        "skills": [
-            {
-                "name": "Java 8",
-                "icon": "fab fa-java"
-            }
-        ]
+        "name": "CSS",
+        "icon": "fab fa-css3"
     },
     {
-        "name": "Control de versiones",
-        "skills": [
-            {
-                "name": "Git",
-                "icon": "fab fa-git-alt"
-            },
-            {
-                "name": "GitHub",
-                "icon": "fab fa-github"
-            }
-        ]
+        "name": "PrimeFaces",
+        "icon": "pi pi-prime"
     },
     {
-        "name": "Base de datos",
-        "skills": [
-            {
-                "name": "SQL",
-                "icon": "fas fa-database"
-            }
-        ]
+        "name": "Java 8",
+        "icon": "fab fa-java"
+    },
+    {
+        "name": "Git",
+        "icon": "fab fa-git-alt"
+    },
+    {
+        "name": "GitHub",
+        "icon": "fab fa-github"
+    },
+    {
+        "name": "MySQL",
+        "icon": "fas fa-database"
     }
 ]

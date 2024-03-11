@@ -2,17 +2,12 @@
     <div class="section-header">
         <div class="content">
             <h1 class="section-title">Habilidades</h1>
-            <p class="section-description">
-                Empecé a programar en 2017 cuando inicié mi formación profesional. Desde que comencé a trabajar en 2019,
-                mi lenguaje de programación principal ha sido Java 8, pero también tengo interés por tecnologías
-                front-end.
-            </p>
         </div>
     </div>
     <div class="skills-groups-container">
         <div class="content">
-            @for(skillsGroup of skillsGroups; track skillsGroup.name) {
-            <app-skills-group [skillsGroup]="skillsGroup"></app-skills-group>
+            @for(technology of technologies; track technology.name) {
+            <i class="technology" [pTooltip]="technology.name" tooltipPosition="bottom" [class]="technology.icon"></i>
             }
         </div>
     </div>
