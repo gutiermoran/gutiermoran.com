@@ -1,29 +1,30 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { SkillsGroup } from '../../../../model/skills-group.model';
-import { SkillsGroupComponent } from '../skills-group/skills-group.component';
 import { NgForOf } from '@angular/common';
+import { Technology } from '../../../../model/technology.model';
+
+import { TooltipModule } from 'primeng/tooltip';
 
 @Component({
   selector: 'app-main-skills',
   standalone: true,
-  imports: [HttpClientModule, SkillsGroupComponent, NgForOf],
+  imports: [HttpClientModule, NgForOf, TooltipModule],
   templateUrl: './main-skills.component.html',
   styleUrl: './main-skills.component.scss'
 })
 export class MainSkillsComponent {
 
-  skillsGroups: Array<SkillsGroup> = [];
+  technologies: Array<Technology> = [];
 
   constructor(private readonly http: HttpClient) { }
 
   ngOnInit(): void {
-    this.findAllSkillsGroups();
+    this.findAllTechnologies();
   }
 
-  findAllSkillsGroups() {
+  findAllTechnologies() {
     this.http.get('./assets/skills.json').subscribe((data: any) => {
-      this.skillsGroups = data;
+      this.technologies = data;
     });
   }
 
