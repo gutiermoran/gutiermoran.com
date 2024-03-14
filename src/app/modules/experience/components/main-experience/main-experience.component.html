@@ -7,24 +7,20 @@
             <ng-template pTemplate="marker" let-item>
                 <span class="marker"></span>
             </ng-template>
-            <ng-template pTemplate="content" let-item>
-                <h2 class="position">{{ item.position }}</h2>
-                <div class="position-info-container">
-                    <span>{{ item.company }} | </span>
-                    <span>{{ item.start }} - </span>
-                    @if(item.end) {
-                    <span>{{ item.end }}</span>
-                    } @else {
-                    <span>Actualidad</span>
-                    }
+            <ng-template class="experience" pTemplate="content" let-item>
+                <div>
+                    <h2 class="position">{{ item.position }}</h2>
+                    <h3 class="company">{{ item.company }}</h3>
                 </div>
-                <p class="description">
-                    {{ item.description }}
-                </p>
-                <div class="stack-container">
-                    @for(technology of item.stack; track technology.name) {
-                    <p-chip [label]="technology.name"></p-chip>
-                    }
+                <div>
+                    <p class="description">
+                        {{ item.description }}
+                    </p>
+                    <div class="stack-container">
+                        @for(technology of item.stack; track technology.name) {
+                        <p-chip [label]="technology.name"></p-chip>
+                        }
+                    </div>
                 </div>
             </ng-template>
         </p-timeline>

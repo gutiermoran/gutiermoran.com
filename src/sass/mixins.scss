@@ -9,13 +9,29 @@
     font-family: $special-font;
     letter-spacing: .03rem;
 
-    @media(width <=$media-1) {
+    @media(width <=$tablet-width) {
         text-align: left;
     }
 
-    @media(width <=$media-2) {
+    @media(width <=$mobile-width) {
         font-size: $section-title-text-size-mobile;
     }
+}
+
+@mixin link-button($background-color) {
+    background-color: $background-color;
+    border: 0.0625rem solid darken($color: $background-color, $amount: 10);
+    border-radius: 2rem;
+    font-size: .85rem;
+    padding: 0.3rem 0.7rem;
+    transition: .2s ease all;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .5rem;
 }
 
 
@@ -49,8 +65,8 @@
     .card-title {
         margin: 0;
         font-family: $common-font;
-        font-weight: 600;
-        font-size: 1.5rem;
+        font-weight: 700;
+        font-size: $title-text-size;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -60,7 +76,7 @@
     .card-description {
         padding: 0.5rem 0 1rem;
         margin: 0;
-        font-size: 1rem;
+        font-size: $body-text-size;
     }
 
     .technologies-container {

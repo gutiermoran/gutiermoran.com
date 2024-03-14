@@ -3,3 +3,10 @@ $secondary-color: #799CE0;
 $light-blue: #E2F0FF;
 $dark-gray: #A5ABBD;
 $dark-orange: #D8A31A;
+
+$dark-green: rgb(7 78 70 / 70%);
+$dark-blue: rgb(20 37 84 / 80%);
+
+.primary-color {
+    color: $primary-color !important;
+}

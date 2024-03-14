@@ -1,5 +1,6 @@
 @import "primeicons/primeicons.css";
 @import "fonts";
+@import "variables";
 
 body {
     margin: 0;
@@ -15,8 +16,14 @@ body {
     margin: 0 auto;
 }
 
-@media (width <=1140px) {
+@media (width <=($tablet-width + 150)) {
     .content {
-        width: 95%;
+        width: $mobile-width;
+    }
+}
+
+@media (width <=($mobile-width + 100)) {
+    .content {
+        width: 90%;
     }
 }

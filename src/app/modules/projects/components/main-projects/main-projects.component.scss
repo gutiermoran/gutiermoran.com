@@ -1,4 +1,5 @@
 @import 'mixins';
+@import 'variables';
 
 $background-color-section: rgba(255, 255, 253, 0.9);
 
@@ -9,12 +10,6 @@ section {
         .section-title {
             @include section-title;
         }
-
-        @media (width <=700px) {
-            .section-title {
-                text-align: center;
-            }
-        }
     }
 
     .projects-container {
@@ -24,12 +19,5 @@ section {
             display: grid;
             gap: 2em;
         }
-    }
-}
-
-@media (width <=700px) {
-    section {
-        background-position-x: center;
-        background-attachment: local;
     }
 }

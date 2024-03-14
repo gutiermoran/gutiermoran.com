@@ -14,14 +14,61 @@ $position-info-data-color: #aaa;
     background-color: #ccc;
 }
 
-::ng-deep .p-chip-text {
-    font-size: .8em !important;
-}
-
 ::ng-deep .p-timeline-event-separator {
     position: relative;
-    top: .4rem;
+    top: 1.5rem;
 }
+
+::ng-deep .p-timeline-event-content {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .position-info-container {
+        font-family: $special-font;
+        font-weight: 300;
+        font-size: 1.1em;
+        flex: 1;
+
+    }
+
+    .position {
+        margin: 0;
+        font-family: $common-font;
+        font-weight: 700;
+        font-size: $title-text-size;
+        line-height: 1;
+    }
+
+    .company {
+        font-size: $subtitle-text-size;
+        margin: .25rem 0;
+        font-weight: 300;
+    }
+
+    .description {
+        margin: 0;
+    }
+
+    .stack-container {
+        display: flex;
+        align-items: center;
+        gap: .75em;
+        flex-flow: wrap;
+        margin: 1rem 0;
+
+        ::ng-deep .p-chip {
+            @include chip;
+        }
+
+        ::ng-deep .p-chip-text {
+            @include chip-text;
+        }
+    }
+
+}
+
+
 
 .marker {
     border-radius: 100%;
@@ -36,55 +83,6 @@ section {
 
         .section-title {
             @include section-title;
-        }
-
-        @media (width <=700px) {
-            .section-title {
-                text-align: center;
-            }
-        }
-    }
-
-    .experience-container {
-
-        .content {
-
-            .position {
-                margin: 0;
-                font-family: "Fira Sans", "Open Sans", sans-serif, helvetica;
-                font-weight: 400;
-                font-size: 1.3em;
-
-                span {
-                    color: $position-info-data-color;
-                }
-            }
-
-            .position-info-container {
-                font-family: $special-font;
-                font-weight: 300;
-                font-size: 1.1em;
-                color: $position-info-data-color;
-            }
-
-            .stack-container {
-                display: flex;
-                align-items: center;
-                gap: .75em;
-                flex-flow: wrap;
-
-                .stack-title {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    margin: 0;
-                }
-
-                .technologies {
-                    display: flex;
-                    align-items: center;
-                    gap: .5em;
-                }
-            }
         }
     }
 }

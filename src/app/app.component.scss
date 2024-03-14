@@ -1,5 +1,4 @@
-@import "colors";
-@import "fonts";
+@import 'mixins';
 
 :host {
     display: flex;
@@ -8,133 +7,47 @@
 }
 
 header {
-    .social-bar {
-        background-color: $primary-color;
-        height: 40px;
-
-        .content {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .pi {
-            color: #fff;
-            margin: .5em;
-            font-size: 1.25em;
-        }
-
-        .pi:hover {
-            color: $dark-orange;
-        }
-    }
-
     .header-container {
-        margin: 3em auto;
-        display: flex;
-        align-items: center;
-        gap: 3em;
+        display: grid;
+        margin: 5rem auto 8rem;
+        gap: 1rem;
+
+        .status {
+            @include link-button($dark-green);
+        }
+
+        .status:hover {
+            transform: scale(1.05);
+        }
+
+        .social-link {
+            @include link-button($primary-color)
+        }
 
         .avatar {
-            width: 130px;
-            height: 130px;
+            width: 5rem;
+            height: 5rem;
             border-radius: 100%;
         }
-    }
 
-    .personal-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
-        .name {
-            font-size: 1.6em;
-            margin: 0;
-            padding: 0;
-            font-family: $special-font;
-            text-transform: uppercase;
-        }
-
-        .occupation {
-            margin: 0;
-            padding: 0;
-            font-size: 1.2em;
-            margin-left: -5px;
-            font-family: $special-font;
-            font-weight: 200;
-            letter-spacing: .15em;
-            text-transform: uppercase;
-
-        }
-
-        .nav-menu ul {
+        .personal-info {
             display: flex;
-            gap: .5em;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 0;
-            margin: 1em 0 0;
+            flex-direction: column;
+            justify-content: center;
 
-            li {
-                list-style: none;
-                font-size: 1.1em;
-                letter-spacing: .05em;
-
-                a {
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    color: #000;
-
-                    ::ng-deep .p-button {
-                        font-size: .7em;
-                        padding: 1em 1.3em;
-                        background-color: $secondary-color;
-                        margin-left: -4px;
-                        border: none;
-                        box-shadow: none !important;
-                    }
-
-                    ::ng-deep .p-button-label {
-                        letter-spacing: .1em;
-                        font-weight: 400;
-                        font-family: $special-font;
-                    }
-
-                    ::ng-deep .p-button:hover {
-                        background-color: #4069A8;
-                    }
-                }
-
-
+            .name {
+                font-size: 2.375em;
+                margin: 0;
+                padding: 0;
+                font-family: $special-font;
             }
 
-            li:nth-child(2) {
-                flex: 1;
-
-                ::ng-deep .p-button {
-                    width: 100% !important;
-                    background-color: transparent;
-                    border: 1px solid $secondary-color;
-                    box-shadow: none !important;
-                    font-size: .7em;
-                }
-
-                ::ng-deep .p-button:active {
-                    background-color: rgba(0, 213, 112, .3) !important;
-                }
-
-                ::ng-deep .p-button-label {
-                    letter-spacing: .1em;
-                    font-weight: 400;
-                    font-family: $special-font;
-                    color: #000;
-                    text-align: left;
-                }
-
-                ::ng-deep .p-button-icon {
-                    color: $secondary-color;
-                }
+            .presentation {
+                width: 50%;
+                font-size: $subtitle-text-size;
             }
+
         }
 
         @media (width <=700px) {
@@ -148,26 +61,25 @@ header {
             }
         }
     }
+}
 
-    @media (width <=700px) {
-        .header-container {
-            flex-direction: column;
-            align-content: center;
-            gap: 1em;
+@media (width <=700px) {
+    .header-container {
+        flex-direction: column;
+        align-content: center;
+        gap: 1em;
 
-            .name {
-                text-align: center;
-                font-size: 1.8em !important;
-            }
+        .name {
+            text-align: center;
+            font-size: 1.8em !important;
+        }
 
-            .occupation {
-                text-align: center;
-                font-size: 1em;
-                margin: 0;
-            }
+        .occupation {
+            text-align: center;
+            font-size: 1em;
+            margin: 0;
         }
     }
-
 }
 
 footer {
