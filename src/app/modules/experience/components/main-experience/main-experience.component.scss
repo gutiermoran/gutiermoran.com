@@ -1,5 +1,4 @@
-@import 'colors';
-@import 'fonts';
+@import 'mixins';
 
 $position-info-data-color: #aaa;
 
@@ -7,13 +6,11 @@ $position-info-data-color: #aaa;
     display: none !important;
 }
 
-::ng-deep .p-timeline-event-content {
-    margin: 0 0 3em;
+::ng-deep .p-timeline-event-content:not(:last-child) {
+    margin: 0 0 3rem;
 }
 
 ::ng-deep .p-timeline-event-connector {
-    width: 1px;
-    margin: 0.75em 0;
     background-color: #ccc;
 }
 
@@ -21,31 +18,24 @@ $position-info-data-color: #aaa;
     font-size: .8em !important;
 }
 
+::ng-deep .p-timeline-event-separator {
+    position: relative;
+    top: .4rem;
+}
+
 .marker {
-    font-size: 1.27em;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    width: 50px;
+    border-radius: 100%;
+    background-color: $primary-color;
+    width: 10px;
+    height: 10px;
 }
 
 section {
-    background-color: #d7e2fd;
 
     .section-header {
-        background-color: rgb(64, 105, 168, .9);
-        background-color: rgba(255, 255, 255, .9);
 
         .section-title {
-            font-size: 1.4em;
-            padding: 2em 0 1.5em;
-            margin: 0;
-            color: $primary-color;
-            text-transform: uppercase;
-            font-family: $special-font;
-            letter-spacing: .1em;
+            @include section-title;
         }
 
         @media (width <=700px) {
@@ -56,8 +46,6 @@ section {
     }
 
     .experience-container {
-        background-color: rgba(255, 255, 255, .9);
-        padding-bottom: 2em;
 
         .content {
 

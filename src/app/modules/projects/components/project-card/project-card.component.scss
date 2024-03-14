@@ -1,5 +1,4 @@
-@import "colors";
-@import "fonts";
+@import 'mixins';
 
 ::ng-deep .p-chip {
     border-radius: 8px;
@@ -12,79 +11,37 @@
 }
 
 .card {
-    display: flex;
+    @include card;
 
-    .project-info-container {
+    a {
+        text-decoration: none;
+        font-size: .8em;
+        color: #bbb;
+    }
+
+    a:hover {
+        color: $dark-orange;
+    }
+
+    .source-code-button {
         display: flex;
-        flex-direction: column;
-        flex: 1;
-
-        .project-name {
-            margin: 0;
-            font-family: $special-font;
-            font-weight: bold;
-            font-size: 1.3em;
-            letter-spacing: .03em;
-            display: flex;
-            align-items: center;
-            gap: .5em;
-
-            a {
-                text-decoration: none;
-                font-size: .8em;
-                color: #bbb;
-            }
-
-            a:hover {
-                color: $dark-orange;
-            }
-        }
-
-        .project-description {
-            padding: 0.5em 0 1em;
-            margin: 0;
-            font-size: 1em;
-        }
-
-        .technologies-container {
-            display: flex;
-            gap: 0.5em;
-
-            ::ng-deep .p-chip-text {
-                font-size: .8em;
-            }
-        }
-
-        .source-code-button {
-            margin: auto 0 1.5em 1.5em;
-        }
-
-        ::ng-deep .source-code-button .p-button {
-            background-color: $primary-color;
-            box-shadow: none !important;
-            font-size: .7em;
-            border: 0;
-            border-radius: 50px;
-            padding: .75em 1em;
-        }
-
-        ::ng-deep .source-code-button .p-button-label {
-            font-family: "Inter var", sans-serif;
-            font-weight: 200;
-            letter-spacing: .08em;
-        }
+        align-items: center;
+        gap: .5rem;
+        font-family: $special-font;
+        font-size: $body-text-size-mobile;
+        font-weight: 300;
     }
 
+    .technologies-container {
+        margin: .5rem 0;
+    }
+}
+
+
+@media(width <=850px) {
     .project-image {
-        width: 40%;
-        border-radius: 0 .5em .5em 0;
-    }
-
-    @media(width <=850px) {
-        .project-image {
-            width: 100%;
-            border-radius: 0 0 .5em .5em;
-        }
+        width: 100%;
+        border-radius: 0 0 .5em .5em;
     }
 }
 
