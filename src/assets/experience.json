@@ -34,7 +34,7 @@
         "company": "Serquo",
         "start": "07/2023",
         "end": "10/2023",
-        "description": "Durante 4 años desarrollé evolutivos de aplicaciones web monolíticas con Atlas (basado en Spring) para la Comunidad de Madrid. Entre los proyectos más destacados se encuentra la aplicación PTEL (Plan de Teletrabajo) y RMER (Registro Electrónico de Méritos).",
+        "description": "Aprendí aspectos básicos de Spring Batch para el desarrollo de aplicaciones batch.",
         "place": "Remoto",
         "stack": [
             {

@@ -56,11 +56,13 @@
     }
 
     display: flex;
-    padding: 1.5rem;
-    box-shadow: 0px 0px 6px -3px rgba(100, 100, 100, .95);
-    border-radius: 0.5rem;
-    flex-direction: column;
-    flex: 1;
+    gap: 2rem;
+
+    .card-image {
+        width: 450px;
+        border-radius: .5rem;
+        border: 1px solid #eee;
+    }
 
     .card-title {
         margin: 0;

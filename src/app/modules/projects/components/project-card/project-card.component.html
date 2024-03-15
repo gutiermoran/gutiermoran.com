@@ -1,11 +1,13 @@
 <div class="card">
-    <h1 class="card-title">{{ project.name }}@if (project.codeLink) {<a class="source-code-button"
-            [href]="project.codeLink" target="_blank"><i class="fab fa-github"></i>GitHub</a>}</h1>
-    <div class="technologies-container">
-        @for (technology of project.technologies; track project.name) {
-        <p-chip [label]="technology.name"></p-chip>
-        }
+    <img class="card-image" src="../../../../../assets/img/gutiermoran.png" loading="lazy">
+    <div>
+        <h1 class="card-title">{{ project.name }}@if (project.codeLink) {<a class="source-code-button"
+                [href]="project.codeLink" target="_blank"><i class="fab fa-github"></i>GitHub</a>}</h1>
+        <div class="technologies-container">
+            @for (technology of project.technologies; track project.name) {
+            <p-chip [label]="technology.name"></p-chip>
+            }
+        </div>
+        <p class="card-description">{{ project.description }}</p>
     </div>
-    <p class="card-description">{{ project.description }}</p>
-
 </div>

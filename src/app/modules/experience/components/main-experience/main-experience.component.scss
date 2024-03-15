@@ -16,11 +16,11 @@ $position-info-data-color: #aaa;
 
 ::ng-deep .p-timeline-event-separator {
     position: relative;
-    top: 1.5rem;
+    top: 1.3rem;
 }
 
 ::ng-deep .p-timeline-event-content {
-    margin: 1rem 0;
+    padding: 0 0 0 1rem;
     display: grid;
     grid-template-columns: 50% 50%;
 
@@ -46,6 +46,11 @@ $position-info-data-color: #aaa;
         font-weight: 300;
     }
 
+    .job-dates {
+        font-weight: 300;
+        margin: 0;
+    }
+
     .description {
         margin: 0;
     }
@@ -66,6 +71,10 @@ $position-info-data-color: #aaa;
         }
     }
 
+}
+
+::ng-deep .p-timeline-event-content:not(:last-child) {
+    margin: 0 0 1rem 0;
 }
 
 
