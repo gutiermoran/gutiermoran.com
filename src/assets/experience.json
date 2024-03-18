@@ -4,7 +4,7 @@
         "company": "Ibermática",
         "start": "09/2019",
         "end": "07/2023",
-        "description": "Durante 4 años desarrollé evolutivos de aplicaciones web monolíticas con Atlas (basado en Spring) para la Comunidad de Madrid. Entre los proyectos más destacados se encuentra la aplicación PTEL (Plan de Teletrabajo) y RMER (Registro Electrónico de Méritos).",
+        "description": "Durante 4 años desarrollé evolutivos de aplicaciones web monolíticas con Atlas para la Comunidad de Madrid. Entre los proyectos más destacados se encuentra la aplicación PTEL (Plan de Teletrabajo) y RMER (Registro Electrónico de Méritos).",
         "place": "Mérida (España)",
         "stack": [
             {
@@ -26,6 +26,10 @@
             {
                 "name": "Oracle SQL",
                 "icon": "fas fa-database"
+            },
+            {
+                "name": "Subversion",
+                "icon": ""
             }
         ]
     },

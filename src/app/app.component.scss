@@ -44,40 +44,10 @@ header {
             }
 
             .presentation {
-                width: 50%;
+                width: 70%;
                 font-size: 1.2rem;
             }
 
-        }
-
-        @media (width <=700px) {
-            .nav-menu ul {
-                li:nth-child(1)>* {
-
-                    ::ng-deep .p-button {
-                        margin-left: -1px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (width <=700px) {
-    .header-container {
-        flex-direction: column;
-        align-content: center;
-        gap: 1em;
-
-        .name {
-            text-align: center;
-            font-size: 1.8em !important;
-        }
-
-        .occupation {
-            text-align: center;
-            font-size: 1em;
-            margin: 0;
         }
     }
 }
@@ -107,7 +77,30 @@ footer {
 
 }
 
-@media (width <=700px) {
+@media (width <=$mobile-width) {
+    .header-container {
+        margin: 3rem auto 4rem !important;
+        flex-direction: column;
+        align-content: center;
+        gap: 1em;
+
+        .name {
+            font-size: 1.8em !important;
+        }
+
+        .occupation {
+            text-align: center;
+            font-size: 1em;
+            margin: 0;
+        }
+
+        .personal-info {
+            .presentation {
+                width: 100% !important;
+            }
+        }
+    }
+
     footer {
         justify-content: space-around;
 

@@ -1,14 +1,10 @@
 <section>
-    <div class="section-header">
-        <div class="content">
-            <h1 class="section-title">Proyectos</h1>
-        </div>
+    <div class="section-header content">
+        <h1 class="section-title">Proyectos</h1>
     </div>
-    <div class="projects-container">
-        <div class="content">
-            @for (project of projects; track project.name) {
-            <app-project-card [project]="project"></app-project-card>
-            }
-        </div>
+    <div class="projects-container content">
+        @for (project of projects; track project.name) {
+        <app-project-card [project]="project"></app-project-card>
+        }
     </div>
 </section>
