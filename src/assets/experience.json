@@ -44,6 +44,10 @@
             {
                 "name": "Java 8",
                 "icon": "fab fa-java"
+            },
+            {
+                "name": "Spring Batch",
+                "icon": "fab fa-java"
             }
         ]
     }
