@@ -1,27 +1,53 @@
-# Joseemiliogutierrez
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+# gutiermoran.com - My portfolio
 
-## Development server
+This repository contains the code of my portfolio website: gutiermoran.com
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://www.gutiermoran.com
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Screenshot
 
-## Running unit tests
+![App Screenshot](https://cdn.gutiermoran.com/images/screenshots/screenshot-2024-03-21-20.23.03.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Run Locally
 
-## Further help
+Clone the project
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+  git clone https://github.com/gutiermoran/gutiermoran.com.git
+```
+
+Go to the project directory
+
+```bash
+  cd gutiermoran.com
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Authors
+
+- [@gutiermoran](https://www.github.com/gutiermoran)
+
+
+## Tech Stack
+
+**Client:** Angular, Sass, PrimeNG
+
