@@ -40,6 +40,15 @@
                 "src/sass"
               ]
             },
+            "optimization": {
+              "scripts": true,
+              "styles": {
+                "minify": true,
+                "inlineCritical": true,
+                "removeSpecialComments": true
+              },
+              "fonts": true
+            },
             "scripts": []
           },
           "configurations": {
@@ -59,7 +68,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
+              "optimization": true,
               "extractLicenses": false,
               "sourceMap": true
             }

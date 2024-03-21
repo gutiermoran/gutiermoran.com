@@ -17,7 +17,7 @@ import { ChipModule } from 'primeng/chip';
 })
 export class MainExperienceComponent implements OnInit {
 
-  experiences: Array<ExperienceItem> = [];
+  experiences: Array<ExperienceItem>;
 
   constructor(private readonly http: HttpClient) { }
 
@@ -26,7 +26,7 @@ export class MainExperienceComponent implements OnInit {
   }
 
   findAllExperience() {
-    this.http.get('./assets/experience.json').subscribe((data: any) => {
+    this.http.get('https://cdn.gutiermoran.com/data/experience.json').subscribe((data: any) => {
       this.experiences = data;
       this.experiences.reverse();
     });

@@ -14,7 +14,7 @@ import { NgForOf } from '@angular/common';
 })
 export class MainProjectsComponent implements OnInit {
 
-  projects: Array<Project> = [];
+  projects: Array<Project>;
 
   constructor(private readonly http: HttpClient) { }
 
@@ -23,7 +23,7 @@ export class MainProjectsComponent implements OnInit {
   }
 
   findAllProjects() {
-    this.http.get('./assets/projects.json').subscribe((data: any) => {
+    this.http.get('https://cdn.gutiermoran.com/data/projects.json').subscribe((data: any) => {
       this.projects = data;
     });
   }
