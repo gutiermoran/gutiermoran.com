@@ -23,7 +23,7 @@ export class MainProjectsComponent implements OnInit {
   }
 
   findAllProjects() {
-    this.http.get('https://cdn.gutiermoran.com/data/projects.json').subscribe((data: any) => {
+    this.http.get('https://api.gutiermoran.com/projects').subscribe((data: any) => {
       this.projects = data;
     });
   }

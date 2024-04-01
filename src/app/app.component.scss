@@ -6,51 +6,7 @@
     flex: 1;
 }
 
-header {
-    .header-container {
-        display: grid;
-        margin: 5rem auto 7rem;
-        gap: 1rem;
 
-        .status {
-            @include link-button($dark-green);
-        }
-
-        .status:hover {
-            transform: scale(1.05);
-        }
-
-        .social-link {
-            @include link-button($primary-color)
-        }
-
-        .avatar {
-            width: 5rem;
-            height: 5rem;
-            border-radius: 100%;
-        }
-
-
-        .personal-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            .name {
-                font-size: 2.375em;
-                margin: 0;
-                padding: 0;
-                font-family: $special-font;
-            }
-
-            .presentation {
-                width: 70%;
-                font-size: 1.2rem;
-            }
-
-        }
-    }
-}
 
 footer {
     background-color: $primary-color;
@@ -78,29 +34,6 @@ footer {
 }
 
 @media (width <=$mobile-width) {
-    .header-container {
-        margin: 3rem auto 4rem !important;
-        flex-direction: column;
-        align-content: center;
-        gap: 1em;
-
-        .name {
-            font-size: 1.8em !important;
-        }
-
-        .occupation {
-            text-align: center;
-            font-size: 1em;
-            margin: 0;
-        }
-
-        .personal-info {
-            .presentation {
-                width: 100% !important;
-            }
-        }
-    }
-
     footer {
         justify-content: space-around;
 
