@@ -1,18 +1,5 @@
 
-# gutiermoran.com - My portfolio
-
-This repository contains the code of my portfolio website: gutiermoran.com
-
-
-## Demo
-
-https://www.gutiermoran.com
-
-
-## Screenshot
-
-![App Screenshot](https://cdn.gutiermoran.com/images/screenshots/screenshot-2024-03-21-20.23.03.png)
-
+# My portfolio
 
 
 ## Run Locally
